@@ -30,6 +30,7 @@
 3. **基于策略的强化学习 (Policy-Gradient RL)**:
    - REINFORCE 算法
    - Advantage Actor-Critic (A2C)
+   - Trust Region Policy Optimization (TRPO)
    - Proximal Policy Optimization (PPO)
 
 4. **Model-Free 与 Model-Based 的区别**
@@ -40,7 +41,7 @@
 1. **MCTS 的核心流程**:
    - 选择 (Selection)
    - 扩展 (Expansion)
-   - 模拟 (Simulation)
+   - 评估 (Evaluation)
    - 回溯 (Backpropagation)
 
 2. **MCTS 在前沿算法中的应用**:
@@ -48,6 +49,7 @@
    - MuZero
 
 3. **MCTS 与策略优化的联系**
+   - MCTS 可以近似为正则化策略优化
 
 
 ### **第 3 节：面向通用决策场景的 MCTS + RL 框架**
@@ -55,10 +57,10 @@
 1. **基准框架：LightZero**:
    - 设计用于通用决策场景的高效 MCTS + RL 框架
 
-2. **基于潜在世界模型的通用规划**:
-   - UniZero 框架
+2. **基于可扩展潜在世界模型的通用高效规划**:
+   - UniZero 算法
 
-3. **利用后向视角与缓冲区重分析强化算法**:
+3. **基于逆向视角和全缓冲区重分析的加速技术**:
    - ReZero 算法
 
 
